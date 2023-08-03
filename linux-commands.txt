@@ -1,0 +1,40 @@
+pwd  #print user directory
+
+/   #root directory
+
+echo " "  #print its arguments as output
+
+su   #switch user
+
+su username #switch to a particular user
+
+sudo #executes only that command with root privileges
+
+clear #clear screen
+
+cd # change directory
+
+cd .. #change to previous directory
+
+ls #list all files and folders in directory
+
+~ #home directory
+
+ls -l #list all files with owner settings and timestamps
+
+ls -a #list all hidden contents
+
+ls *.txt # list all text files
+
+vi # to view the file vi editor
+
+nano # to view the file nano editor
+
+ > file.txt #redirects output to file.txt
+
+cd 'a b' #change to directory name with spaces
+
+cat #print the contents of the file in the terminal
+
+
+
