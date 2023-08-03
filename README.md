@@ -1,3 +1,3 @@
 # Linux-commands
 
-This file list all basic commands on linux
+The file "linux-commands.txt" list all basic commands on linux
