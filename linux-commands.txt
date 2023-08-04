@@ -36,5 +36,31 @@ cd 'a b' #change to directory name with spaces
 
 cat #print the contents of the file in the terminal
 
+>> file.txt #concatenate output to file.txt
 
+grep $pattern file.txt #return the results of matching pattern
+
+grep -n $pattern file.txt #return the results of matching pattern with line number
+
+grep -i #return case-sensitive option
+
+sort file.txt #sort contents of a file
+
+sort -r #sort in reverse order 
+
+| # (pipe) #perform more operations on the result of the prrevious command
+
+cp $src #dest #copies from source to destination
+
+cp -R #recursive copy
+
+mkdir $dir # create directory
+
+mkdir -p $dir/dir1 #creates sub-directory in the path
+
+rm -rf # deletes the directory even if non-empty
+
+rmdir # deletes only empty directory
+
+#######################################################################
 
