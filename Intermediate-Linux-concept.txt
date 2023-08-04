@@ -1,0 +1,91 @@
+##################################################################
+Regular expressions
+##################################################################
+
+\ #represents special characters
+
+() #groups regular expression
+
+? #matches the preceding character one or more times
+
+* #matches the preceding character zero or more times
+
+$ #matches end of the string
+
+^ #matches the start of a string
+
+. #replaces any character
+
+Example:
+
+ca $filename | grep -i ^a #outputs all the string starting with a or A
+
+cat $filename | grep -i a$ #outputs all the string ending with a or A
+
+echo {1..5} # prints all the number from 1 to 5
+
+#############################################################################
+Processes
+#############################################################################
+
+Process is of two types 1. Foreground 2. Background
+what are process?
+
+like opening firefox,executing linux command
+
+top command is like Task Manager in linux
+
+fg $application #to  push an application foreground
+
+bg $application #to  push an application background
+
+ps ux #list the processes only started by the user logged in
+
+pidof $application #gives the PID of the application
+
+#############################################################################
+user related commands
+#############################################################################
+
+sudo useradd $user #Adds new user
+
+sudo passwd $user  #Adds passwd to the user
+
+sudo user-del $user #Deletes the user
+
+sudo groupadd $group #Adds a new group
+
+sudo groupdel $group #Deletes the group
+
+sudo usermod -g $group $user #Add user to a primary group
+
+##############################################################################
+ssh (secure shell)
+##############################################################################
+
+TO TURN_OFF FIREWALL
+
+service iptables stop #drops the ip-table
+
+sudo chkconfig iptables off #Permanently disable firewall
+
+TO HAVE REMOTE ACCESS OF HOST AND SLAVES
+
+In the /etc/hosts enter the ip address of master and slave as shown below
+
+master $ipaddress
+slave $ipaddresss
+
+To SSH as master and slave
+
+run the command ssh master on slave machine or ssh slave on master machine 
+
+ifconfig #prints all network config
+
+ip addr show #prints all the ip
+
+sudo ip addr del ip-address dev $eth #deletes the existing ip addr
+
+sudo ip addr add ip-address dev $eth #adds ip address
+
+
