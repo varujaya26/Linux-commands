@@ -1,3 +1,7 @@
+####################################################################
+Basic Commands
+####################################################################
+
 pwd  #print user directory
 
 /   #root directory
@@ -63,4 +67,35 @@ rm -rf # deletes the directory even if non-empty
 rmdir # deletes only empty directory
 
 #######################################################################
+File permissions
+#######################################################################
 
+chmod #change read write and executable permissions of a file
+
+chown # change ownership of the file
+
+chgrp $groupname $filename #change groupname of the file
+
+r=4 w=2 x=1
+
+########################################################################
+Linux Repositories
+########################################################################
+
+sudo apt-get install $package #For debian based
+
+sudo yum install $package #For RHEL
+
+sudo dnf install $package #For RHEL 9 and Fedora based
+
+source .bashrc #set environmental variables
+
+########################################################################
+TAR files
+########################################################################
+
+tar -cvf $filename $file #compress the file to a tar file
+
+tar -xvf $filename $file #Extracts the file from a tar file
+
+######################################################################### 
